@@ -15,9 +15,6 @@
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.1",
     "@tailwindcss/vite": "^4.3.3",
-    "@tsparticles/engine": "^4.3.2",
-    "@tsparticles/react": "^4.3.2",
-    "@tsparticles/slim": "^4.3.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.42.2",
     "gsap": "^3.15.0",
@@ -29,11 +26,9 @@
     "react-intersection-observer": "^10.1.0",
     "react-router-dom": "^7.18.1",
     "react-scroll": "^1.9.3",
-    "react-tsparticles": "^2.12.2",
     "react-type-animation": "^3.2.0",
     "tailwindcss": "^4.3.3",
-    "three": "^0.185.1",
-    "tsparticles": "^4.3.2"
+    "three": "^0.185.1"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
