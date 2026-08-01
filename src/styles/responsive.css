@@ -1,0 +1,221 @@
+/* ===========================
+   Large Tablets
+=========================== */
+
+@media (max-width: 992px) {
+
+  section{
+    padding:80px 5%;
+  }
+
+  .navbar{
+    width:95%;
+    padding:14px 24px;
+    position:relative;
+  }
+
+  /* Hero */
+
+  .hero{
+    grid-template-columns:1fr;
+    gap:60px;
+    text-align:center;
+  }
+
+  .hero-left{
+    align-items:center;
+  }
+
+  .hero-buttons,
+  .hero-social{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .hero-right{
+    justify-content:center;
+  }
+
+  .terminal-window{
+    width:100%;
+    max-width:450px;
+  }
+
+  /* About */
+
+  .about-content{
+    grid-template-columns:1fr;
+  }
+
+  .about-profile{
+    border-right:none;
+    border-bottom:1px solid var(--border);
+  }
+
+  /* Skills */
+
+  .skills-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* Projects */
+
+  .projects-grid{
+    grid-template-columns:1fr;
+  }
+
+  /* Certificates */
+
+  .certificate-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+@media (max-width:768px){
+
+  section{
+    padding:70px 20px;
+  }
+
+  .navbar{
+    width:94%;
+    padding:14px 18px;
+    position:relative;
+  }
+
+  .menu-btn{
+    display:flex;
+    z-index:1002;
+  }
+
+  .nav-menu{
+
+    position:absolute;
+
+    top:85px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:22px;
+
+    background:rgba(17,24,39,.98);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(59,130,246,.2);
+
+    border-radius:18px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+    transform:translateY(-20px);
+
+    transition:all .35s ease;
+  }
+
+  .nav-menu.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    pointer-events:auto;
+
+    transform:translateY(0);
+
+  }
+
+  .nav-menu a{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    color:white;
+
+  }
+
+  .nav-menu a:hover{
+
+    background:rgba(59,130,246,.12);
+
+    color:#3b82f6;
+
+  }
+
+  /* Hero */
+
+  .hero-name{
+    font-size:2.5rem;
+  }
+
+  .hero-role{
+    font-size:1.3rem;
+  }
+
+  .hero-desc{
+    font-size:15px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .hero-buttons a,
+  .hero-buttons button{
+    width:100%;
+  }
+
+  .terminal-window{
+    max-width:100%;
+  }
+
+  .about-terminal{
+    padding:20px;
+  }
+
+  .about-name{
+    font-size:1.6rem;
+  }
+
+  .project-buttons{
+    flex-direction:column;
+  }
+
+  .project-buttons a{
+    width:100%;
+    justify-content:center;
+  }
+
+  .certificate-image{
+    height:180px;
+  }
+
+  .certificate-body{
+    padding:18px;
+  }
+
+}
