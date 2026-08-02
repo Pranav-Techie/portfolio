@@ -81,7 +81,7 @@ export default function Skills() {
 
       <div className="section-title">
         <p>MY SKILLS</p>
-        <h2>{"$ ls skills/"}</h2>
+        <h2>{"02 / SKILLS"}</h2>
         <p className="section-subtitle">
           Technologies I use to build modern software.
         </p>

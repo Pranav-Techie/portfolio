@@ -10,16 +10,16 @@
 ========================= */
 
 :root{
-  --bg:#0B1120;
+  --bg:#0A0F1C;
   --surface:#111827;
-  --surface2:#1E293B;
+  --surface2:#172033;
 
-  --text:#ffffff;
+  --text:#F8FAFC;
   --text-secondary:#94A3B8;
 
   --primary:#38BDF8;
 
-  --border:rgba(255,255,255,.08);
+  --border:rgba(148,163,184,.14);
 }
 
 /* =========================

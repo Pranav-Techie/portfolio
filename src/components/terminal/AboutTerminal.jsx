@@ -42,7 +42,7 @@ export default function AboutTerminal() {
           <div className="about-right">
 
   <div className="terminal-block">
-    <span className="command">$ education</span>
+    <span className="command">education</span>
 
     <span className="output">
       B.Tech in Computer Science & Engineering
@@ -54,7 +54,7 @@ export default function AboutTerminal() {
   </div>
 
   <div className="terminal-block">
-    <span className="command">$ location</span>
+    <span className="command">location</span>
 
     <span className="output">
       🇮🇳 Chennai, India
@@ -62,7 +62,7 @@ export default function AboutTerminal() {
   </div>
 
   <div className="terminal-block">
-    <span className="command">$ about</span>
+    <span className="command">about</span>
 
     <span className="output">
       <span className="output">
@@ -75,7 +75,7 @@ while continuously learning new technologies and solving real-world problems.
   </div>
 
   <div className="terminal-block">
-    <span className="command">$ goal</span>
+    <span className="command">goal</span>
 
     <span className="output">
       Building scalable software solutions and continuously improving
@@ -84,7 +84,7 @@ while continuously learning new technologies and solving real-world problems.
   </div>
 
   <div className="terminal-input">
-    <span className="command">$</span>
+    <span className="command">%</span>
     <span className="cursor"></span>
   </div>
 

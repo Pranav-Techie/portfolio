@@ -6,7 +6,7 @@ export default function Experience() {
 
       <div className="section-title">
         <p>EXPERIENCE</p>
-        <h2>{"$ history"}</h2>
+        <h2>{"04 / JOURNEY"}</h2>
         <p className="section-subtitle">
           My professional journey, internships and learning experiences.
         </p>

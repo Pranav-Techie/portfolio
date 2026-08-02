@@ -18,32 +18,32 @@ export default function Terminal() {
 
       <div className="terminal-body">
 
-<p className="command">$ pwd</p>
+<p className="command">pwd</p>
 <p className="output">~/pranavos</p>
 
-<p className="command">$ ls skills/</p>
+<p className="command">ls skills/</p>
 <p className="output">
 React • Next.js • Node.js • Express
 </p>
 
-<p className="command">$ git status</p>
+<p className="command">git status</p>
 <p className="value">
 On branch <span>internship-2026</span>
 </p>
 
-<p className="command">$ npm run career</p>
+<p className="command">npm run career</p>
 <p className="output">
 ✔ Building scalable web applications...
 </p>
 
-<p className="command">$ system</p>
+<p className="command">system</p>
 <p className="output">
 <span className="status-dot"></span>
 Ready for Internship
 </p>
 
 <div className="terminal-input">
-<span className="command">$</span>
+<span className="command">%</span>
 <span className="cursor"></span>
 </div>
 

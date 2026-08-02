@@ -7,7 +7,7 @@ export default function Projects() {
 
       <div className="section-title">
         <p>FEATURED WORK</p>
-        <h2>{"$ git log"}</h2>
+        <h2>{"03 / WORK"}</h2>
         <p className="section-subtitle">
           A collection of projects showcasing my skills in full-stack
           development, AI and modern web technologies.

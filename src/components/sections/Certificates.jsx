@@ -7,7 +7,7 @@ export default function Certificates() {
       <div className="section-title">
         <p>CERTIFICATES</p>
 
-        <h2>{"$ ls certificates"}</h2>
+        <h2>{"05 / LEARNING"}</h2>
 
         <p className="section-subtitle">
           Certifications and learning achievements.

@@ -786,7 +786,7 @@ margin:auto;
 
 .about-title{
     margin-left:18px;
-    color:#22c55e;
+    color:#38bdf8;
     font-family:"JetBrains Mono",monospace;
     font-size:14px;
     font-weight:600;
@@ -911,7 +911,7 @@ margin:auto;
 }
 
 .terminal-block h4{
-    color:#22c55e;
+    color:#38bdf8;
     font-family:"JetBrains Mono",monospace;
     font-size:15px;
     font-weight:700;
@@ -932,7 +932,7 @@ margin:auto;
 
 .command{
     display:block;
-    color:#22c55e;
+    color:#38bdf8;
     font-family:"JetBrains Mono",monospace;
     font-size:15px;
     font-weight:700;
@@ -1412,21 +1412,14 @@ line-height:1.7;
 }
 
 .project-card:hover{
+    transform:translateY(-4px);
 
-    transform:
-        perspective(1200px)
-        rotateX(2deg)
-        translateY(-10px)
-        scale(1.015);
-
-    border-color:#3b82f6;
+    border-color:rgba(56,189,248,.38);
 
     box-shadow:
-        0 0 0 1px rgba(59,130,246,.25),
-        0 30px 60px rgba(0,0,0,.45),
-        0 0 45px rgba(59,130,246,.15);
-
+        0 18px 40px rgba(0,0,0,.30);
 }
+
 
 .project-card:hover::before{
 
@@ -1436,7 +1429,7 @@ line-height:1.7;
 
 .project-card:hover::after{
 
-    left:170%;
+    left:-170%;
 
 }
 
@@ -1486,28 +1479,19 @@ line-height:1.7;
 
 /* ------------------------------------------------------- */
 
-.gradient-blue{
-    background:linear-gradient(135deg,#2563eb,#38bdf8);
-}
-
-.gradient-green{
-    background:linear-gradient(135deg,#059669,#22c55e);
-}
-
-.gradient-purple{
-    background:linear-gradient(135deg,#7c3aed,#a855f7);
-}
-
-.gradient-orange{
-    background:linear-gradient(135deg,#ea580c,#f59e0b);
-}
-
-.gradient-indigo{
-    background:linear-gradient(135deg,#4f46e5,#6366f1);
-}
-
+.gradient-blue,
+.gradient-green,
+.gradient-purple,
+.gradient-orange,
+.gradient-indigo,
 .gradient-teal{
-    background:linear-gradient(135deg,#0f766e,#14b8a6);
+    background:
+        linear-gradient(
+            135deg,
+            #172554 0%,
+            #0f2942 55%,
+            #0c4a6e 100%
+        );
 }
 
 /* ------------------------------------------------------- */
@@ -1550,11 +1534,11 @@ line-height:1.7;
 
     border-radius:999px;
 
-    background:rgba(34,197,94,.06);
+    background:rgba(56,189,248,.07);
 
-    border:1px solid rgba(34,197,94,.15);
+    border:1px solid rgba(56,189,248,.18);
 
-    color:#22c55e;
+    color:#7dd3fc;
 
     font-size:13px;
 
@@ -1568,13 +1552,13 @@ line-height:1.7;
 
     transform:translateY(-2px);
 
-    color:#fff;
+    color:#f8fafc;
 
-    background:#22c55e;
+    background: rgba(56, 189, 248, .14);
 
-    border-color:#22c55e;
+    border-color: rgba(56, 189, 248, .45);
 
-    box-shadow:0 0 15px rgba(34,197,94,.25);
+    box-shadow: none;
 
 }
 
@@ -3427,6 +3411,18 @@ body.light .contact-form:hover{
 }
 
 
+
+
+/* Project tech hover — light mode */
+body.light .project-tech span:hover {
+    background: #e0f2fe;
+    color: #0284c7;
+    border-color: #7dd3fc;
+    box-shadow: none;
+    transform: translateY(-2px);
+}
+
+
 /* =========================================
    MOBILE ABOUT TERMINAL HEADER FIX
 ========================================= */
@@ -4506,5 +4502,379 @@ body.light .contact-form:hover{
 
     .certificates .certificate-content h4 {
         font-size: 11.5px !important;
+    }
+}
+
+
+/* =========================================================
+   FINAL CERTIFICATE CARD LAYOUT
+   Desktop + Mobile
+========================================================= */
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    .certificate-image-wrapper {
+        padding: 18px 20px 8px;
+    }
+
+    .certificate-image {
+        width: 100%;
+        height: 230px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .certificate-grid {
+        gap: 24px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .certificate-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 28px;
+    }
+
+    .certificate-card {
+        width: 100%;
+        border-radius: 18px;
+    }
+
+    .certificate-image-wrapper {
+        width: 100%;
+        padding: 16px 14px 8px;
+        box-sizing: border-box;
+    }
+
+    .certificate-image {
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    /* Phones don't need desktop-style hover movement */
+    .certificate-card:hover {
+        transform: none;
+    }
+
+    .certificate-card:hover .certificate-image {
+        transform: none;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .certificate-grid {
+        gap: 16px;
+    }
+
+    .certificate-image-wrapper {
+        padding: 12px 10px 6px;
+    }
+
+    .certificate-image {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+}
+
+
+/* =========================================================
+   CERTIFICATES — FINAL COMPACT FIX
+========================================================= */
+
+/* ALL SCREEN SIZES */
+.certificates .certificate-card {
+    height: auto !important;
+    min-height: 0 !important;
+}
+
+.certificates .certificate-content {
+    flex: none !important;
+}
+
+.certificates .certificate-content h3 {
+    margin-top: 14px !important;
+    margin-bottom: 4px !important;
+}
+
+
+/* ================= DESKTOP ================= */
+@media (min-width: 769px) {
+
+    .certificates .certificate-grid {
+        gap: 20px !important;
+    }
+
+    .certificates .certificate-image-wrapper {
+        height: 190px !important;
+        min-height: 0 !important;
+        padding: 12px 18px 6px !important;
+    }
+
+    .certificates .certificate-image {
+        width: 100% !important;
+        height: 175px !important;
+        max-height: 175px !important;
+        object-fit: contain !important;
+    }
+
+    .certificates .certificate-content {
+        padding: 12px 18px 16px !important;
+    }
+
+    .certificates .certificate-desc {
+        margin: 0 !important;
+    }
+
+    .certificates .certificate-content h3 {
+        margin-top: 16px !important;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .certificates .certificate-grid {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+        margin-top: 24px !important;
+    }
+
+    .certificates .certificate-card {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .certificates .certificate-image-wrapper {
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 14px 14px 5px !important;
+    }
+
+    .certificates .certificate-image {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 285px !important;
+        max-height: 195px !important;
+        object-fit: contain !important;
+        margin: 0 auto !important;
+    }
+
+    .certificates .certificate-content {
+        padding: 10px 16px 16px !important;
+        flex: none !important;
+    }
+
+    .certificates .certificate-desc {
+        margin: 0 !important;
+    }
+
+    .certificates .certificate-content h3 {
+        margin-top: 14px !important;
+        margin-bottom: 3px !important;
+    }
+}
+
+
+/* ================= SMALL PHONE ================= */
+@media (max-width: 480px) {
+
+    .certificates .certificate-card {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .certificates .certificate-image-wrapper {
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 12px 10px 4px !important;
+    }
+
+    .certificates .certificate-image {
+        height: auto !important;
+        max-width: 275px !important;
+        max-height: 190px !important;
+    }
+
+    .certificates .certificate-content {
+        padding: 8px 14px 14px !important;
+    }
+
+    .certificates .certificate-content h3 {
+        margin-top: 12px !important;
+    }
+
+    .certificates .certificate-grid {
+        gap: 12px !important;
+    }
+}
+
+
+/* =========================================================
+   FINAL CERTIFICATE IMAGE FILL — DO NOT PUT RULES BELOW THIS
+========================================================= */
+
+/* DESKTOP */
+@media (min-width: 769px) {
+
+    .certificates .certificate-image-wrapper {
+        width: 100% !important;
+        height: 205px !important;
+        min-height: 205px !important;
+
+        /* very small dark gap around certificate */
+        padding: 10px 14px 4px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .certificates .certificate-image {
+        width: 100% !important;
+        height: 190px !important;
+
+        max-width: none !important;
+        max-height: none !important;
+
+        object-fit: contain !important;
+        object-position: center !important;
+
+        margin: 0 !important;
+        border-radius: 8px !important;
+    }
+
+    .certificates .certificate-content {
+        padding: 10px 16px 16px !important;
+    }
+}
+
+
+/* PHONE / TABLET */
+@media (max-width: 768px) {
+
+    .certificates .certificate-card {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .certificates .certificate-image-wrapper {
+        width: 100% !important;
+
+        /* IMPORTANT: remove old fixed 175/195px area */
+        height: auto !important;
+        min-height: 0 !important;
+
+        /* only thin dark blue border visible */
+        padding: 10px 12px 4px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .certificates .certificate-image {
+        width: 100% !important;
+        height: auto !important;
+
+        /* cancel ALL old restrictions */
+        max-width: none !important;
+        max-height: none !important;
+
+        object-fit: contain !important;
+        object-position: center !important;
+
+        margin: 0 !important;
+        border-radius: 8px !important;
+    }
+
+    .certificates .certificate-content {
+        padding: 10px 14px 14px !important;
+    }
+}
+
+
+/* SMALL PHONE */
+@media (max-width: 480px) {
+
+    .certificates .certificate-image-wrapper {
+        padding: 8px 10px 3px !important;
+    }
+
+    .certificates .certificate-content {
+        padding: 9px 12px 13px !important;
+    }
+}
+
+
+/* =========================================================
+   CERTIFICATE FINAL SIZE TUNING
+========================================================= */
+
+/* DESKTOP — slightly bigger certificate */
+@media (min-width: 769px) {
+
+    .certificates .certificate-image-wrapper {
+        height: 220px !important;
+        min-height: 220px !important;
+        padding: 8px 10px 5px !important;
+    }
+
+    .certificates .certificate-image {
+        width: 100% !important;
+        height: 207px !important;
+        max-width: none !important;
+        max-height: none !important;
+        object-fit: contain !important;
+    }
+}
+
+
+/* MOBILE — slightly smaller than current */
+@media (max-width: 768px) {
+
+    .certificates .certificate-image-wrapper {
+        padding: 14px 20px 6px !important;
+    }
+
+    .certificates .certificate-image {
+        width: 94% !important;
+        height: auto !important;
+        max-width: none !important;
+        max-height: none !important;
+        margin: 0 auto !important;
+    }
+}
+
+
+/* SMALL PHONE */
+@media (max-width: 480px) {
+
+    .certificates .certificate-image-wrapper {
+        padding: 12px 18px 5px !important;
+    }
+
+    .certificates .certificate-image {
+        width: 94% !important;
     }
 }

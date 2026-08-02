@@ -5,7 +5,7 @@ export default function About() {
     <section className="about" id="about">
       <div className="section-title">
         <p>ABOUT ME</p>
-        <h2>{"$ cat about.json"}</h2>
+        <h2>{"01 / ABOUT"}</h2>
         <p className="section-subtitle">
           Get to know me better.
         </p>

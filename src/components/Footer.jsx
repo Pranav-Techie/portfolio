@@ -54,7 +54,7 @@ export default function Footer() {
 
         <div className="terminal-preview">
           <div className="terminal-cursor">
-            $
+            %
             <span className="cursor"></span>
           </div>
         </div>

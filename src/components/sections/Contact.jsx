@@ -49,7 +49,7 @@ setLoading(false);
 
         <p>CONTACT</p>
 
-        <h2>{"$ connect"}</h2>
+        <h2>{"06 / CONTACT"}</h2>
 
         <p className="section-subtitle">
           Have a project, opportunity or just want to say hello?
